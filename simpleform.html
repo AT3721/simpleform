@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .abc {
+            font-family: "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif;
+        }
+
+        .body {
+            background-color: #96e9ed;
+        }
+    </style>
+</head>
+
+<body class="body">
+    <form method="get" action="simpleform.html" class="abc">
+        <h2>Order form</h2>
+        <hr size="2" color="black">
+        <p>What would you like to order?</p>
+        <select>
+            <option value="">A</option>
+            <option>B (+ 0.5$)</option>
+            <option>C (+ 0.5$)</option>
+        </select>
+        <p>How many would you like?</p>
+        <input type="radio" name="rd" /> 1 - $10 <br />
+        <input type="radio" name="rd" /> 2 - $20 <br />
+        <input type="radio" name="rd" /> 3 - $30 <br />
+        <p>Name<span style="color: red;">*</span></p>
+        <input type="text" name="firstname" placeholder="Firstname" size="15" />
+        <input type="text" name="lastname" placeholder="Lastname" size="15" />
+        <p>Email<span style="color: red;">*</span></p>
+        <input type="email" name="email" placeholder="Email" size="36" />
+        <p>Phone number</p>
+        <input type="tel" name="phone1" placeholder="" size="3" />-
+        <input type="tel" name="phone2" placeholder="" size="3" />-
+        <input type="tel" name="phone3" placeholder="" size="4" />
+        <p><input type="button" name="btSubmit" value="Submit" /></p>
+    </form>
+</body>
+
+</html>
